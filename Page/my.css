@@ -1,0 +1,151 @@
+div.bubble{
+	border: 2px solid #8e8e9696;
+	position: relative;
+	border-radius: 7px;
+}
+div.bubble::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border: 20px solid;
+	position: absolute;
+	top: -42px;
+	left: 40px;
+	border-color: transparent transparent #8e8e9696;
+}
+div.bubble::after{
+	content: '';
+	width: 0;
+	height: 0;
+	border: 20px solid;
+	position: absolute;
+	top: -39px;
+	left: 40px;
+	border-color: transparent transparent #e1e1ee;
+}
+#input{
+	position: absolute;
+	top: -12px;
+	left: 0;
+	opacity: 0;
+	z-index: -10;
+}
+iframe{
+	top: 12px;
+	left: 12px;
+	margin:auto;
+	padding:auto;
+}
+strong{
+	color:#4169E1;
+	font-size:20px;
+}
+pre{
+	color:#27262e;
+	font-family:consolas;
+	font-size:14px;
+}
+a.url{
+	color:#4021ce;
+	text-decoration:none;
+}
+html{
+	background-color:#e1e1ee;
+	color:#27262e;
+	font-family:consolas;
+
+}
+a.url:visited{
+	text-decoration:none;
+}
+a.url:hover{
+	border-style:solid;
+	border-color:#0C52941A;
+	border-width:2px;
+	border-radius:2px;
+	background-color:#1a74fc42;
+	color:#613dff;
+	text-decoration:none;
+}
+a.url:active{
+	border-style:solid;
+	border-color:#0C52941A;
+	border-width:2px;
+	border-radius:5px;
+	background-color:#0084FF49;
+	color:#355BCF;
+	text-decoration:none;
+}
+ul.pagination {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+ul.pagination li {
+	display: inline;
+}
+ul.pagination li a {
+	color: #464c50;
+	background-color:#d4ddee;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+ul.pagination li a.active {
+	background-color: #355BCF;
+	color: #DDDDDD;
+}
+ul.pagination li a.subactive {
+	background-color: #9ca7e4;
+	color: #CCCCCC;
+}
+ul.pagination li a:hover:not(.active) {
+	background-color: #b3c3ff;
+	color:#8086fc;
+}
+.button {
+	display: inline-block;
+	border-radius: 2px;
+	background-color: #355BCF;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	width: 52px;
+	padding: 8px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	text-decoration:none;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 1px;
+	right: 5px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 10px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0px;
+}
+
+.button:hover{
+	opacity: 1;
+	width: 64px;
+	box-shadow: 0 2px 2px 0 #00001E49, 0 2px 2px 0 #00000021;
+}
