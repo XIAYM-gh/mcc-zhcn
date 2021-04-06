@@ -5,20 +5,26 @@
 <strong></strong>
 <hr>
 <strong>zh_cn.ini</strong>
-<button class="button" style="vertical-align:middle" onclick="filego(zh_cn.ini)"><span>打开</span></button><br/>
+<button class="button" style="vertical-align:middle" onclick="maint()"><span>打开</span></button><br/>
 mcc 主要的翻译文件
 <br/><br/><br/>
 <strong>MinecraftClient.ini</strong>
-<button class="button" style="vertical-align:middle" onclick="filego(MinecraftClient.ini)"><span>打开</span></button><br/>
+<button class="button" style="vertical-align:middle" onclick="sett()"><span>打开</span></button><br/>
 mcc 设置文件
 <br/><br/><br/>
 <strong>Github 项目</strong>
-<button class="button" style="vertical-align:middle" onclick="filego(https://github.com/XIAYM-gh/mcc-zhcn)"><span>打开</span></button><br/>
+<button class="button" style="vertical-align:middle" onclick="gogit()"><span>打开</span></button><br/>
 记得star(bushi)
 <br/><br/><br/>
 
 <script>
-function filego(goto) {
-window.location.href = goto;
+function maint() {
+window.location.href = "/zh_cn.ini";
+}
+function sett() {
+window.location.href = "/MinecraftClient.ini"
+}
+function gogit() {
+window.location.href = "https://github.com/XIAYM-gh/mcc-zhcn"
 }
 </script>
