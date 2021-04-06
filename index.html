@@ -1,19 +1,24 @@
-<title>欢迎!</title>
+<title>MCC Translations @ Index (XIAYM-gh/mcc-zhcn)</title>
 <link rel="stylesheet" type="text/css" href="/Page/my.css">
 <h1>MCC Translations</h1>
 <br/>
 <strong></strong>
 <hr>
 <strong>zh_cn.ini</strong>
-<button class="button" style="vertical-align:middle" onclick="defaultfile()"><span>打开</span></button><br/>
+<button class="button" style="vertical-align:middle" onclick="filego(zh_cn.ini)"><span>打开</span></button><br/>
 mcc 主要的翻译文件
 <br/><br/><br/>
-<a href="/MinecraftClient.ini">MinecraftClient.ini</a><br>
-<a href="/README.md">README.md</a><br>
-<a href="https://github.com/XIAYM-gh/mcc-zhcn/">Github 项目</a><br>
+<strong>MinecraftClient.ini</strong>
+<button class="button" style="vertical-align:middle" onclick="filego(MinecraftClient.ini)"><span>打开</span></button><br/>
+mcc 设置文件
+<br/><br/><br/>
+<strong>Github 项目</strong>
+<button class="button" style="vertical-align:middle" onclick="defaultfile(https://github.com/XIAYM-gh/mcc-zhcn)"><span>打开</span></button><br/>
+记得star(bushi)
+<br/><br/><br/>
 
 <script>
-function defaultfile(){
-window.location.href="/zh_cn.ini";
+function filego(goto){
+window.location.href=goto;
 }
 </script>
